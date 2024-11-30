@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --white: #fff;
+}
+
 body{
     font-family: "Lato", sans-serif;
 }
@@ -15,6 +19,7 @@ body{
 .hero{
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)), url('assets/02-night.jpg') center/cover no-repeat fixed;
+    position: relative;
 }
 
 .hero__nav-list{
@@ -24,14 +29,17 @@ body{
     padding: 1rem 1rem 0 1rem;
 }
 
+.hero__nav{
+    height: 10vh;
+}
 
 .fa-bars{
-    color: #fff;
+    color: var(--white);
     font-size: 40px;
 }
 
 .hero__nav-heading{
-    color: #fff;
+    color: var(--white);
     font-size: 32px;
     font-weight: 300;
 }
@@ -39,6 +47,7 @@ body{
 .fa-star{
     font-size: 10px;
 }
+
 .fa-star:first-of-type{
     margin-left: 1rem;
 }
@@ -48,5 +57,44 @@ li{
 }
 
 .hero__nav-text{
-    color: #fff;
+    color: var(--white);
+}
+
+.divider{
+    height: 1px;
+    background: #d0d0d039;
+    margin-top: 1.2rem;
+}
+
+.banner{
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+    margin-top: -5rem;
+}
+
+.banner__heading{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.banner__heading-small{
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.banner__btn{
+    text-decoration: none;
+    background: #805E2E;
+    color: var(--white);
+    padding: .9rem 1rem;
+    font-size: 1.1rem;
+    display: inline-block;
+    cursor: pointer;
 }
