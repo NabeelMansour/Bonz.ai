@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* Global Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --line-hight: 1.5;
+  --facility-cls: #646568;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+li {
+  display: none;
+}
+
+.logo {
+  margin: 0.5rem auto;
+  width: 105px;
+  height: 105px;
+}
+
+section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.divider {
+  height: 1px;
+  background: #d0d0d039;
+  margin-top: 1.2rem;
+}
+
+/* About styles */
+
+.sustainable-heading {
+  margin: 2rem auto 0;
+  width: 13rem;
+  line-height: 1.4;
+}
+
+.sustainable__text {
+  margin: 1rem auto 0;
+  text-align: left;
+  line-height: var(--line-hight);
+}
+
+.sustainable-heading-light {
+  font-weight: 300;
+}
+
+.sustainable__solar-text,
+.checkin__text {
+  margin-top: 2rem;
+  line-height: var(--line-hight);
+  text-align: left;
+}
+
+.checkin__inner img {
+  margin-top: 0;
+}
+
+/* Facility */
+
+.facility {
+  margin-bottom: -3rem;
+}
+
+.facility__text {
+  margin-bottom: 3rem;
+}
+
+.facility__logo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px;
+  align-items: center;
+  text-align: left;
+}
+
+.facility__logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.facility__divider {
+  height: 2px;
+  width: 40px;
+  background: var(--facility-cls);
+  margin: 0 2rem;
+}
+
+.facility__logo p {
+  font-size: 14px;
+  grid-column: 3 / -1;
+}
+
+.fa-solid {
+  color: var(--facility-cls);
+}
+
+.rooms__content {
+  text-align: left;
+  margin-top: 3rem;
+  line-height: var(--line-hight);
+}
+
+/* Footer Section */
+
+.footer {
+  /* margin-top: 2rem; */
+  background: #111111c3;
+  color: #fff;
+  padding: 2rem 0;
+  order: 2;
+}
+
+.bold {
+  font-weight: 700;
+  display: block;
+  color: #ffffffa8;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.space {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.fa-brands {
+  color: #fff;
+  margin: 1rem 1rem 0 0;
+}
+
+.footer__rights {
+  width: 55%;
+  line-height: var(--line-hight);
+  margin-bottom: 1rem;
+}
+
+.footer__terms {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__terms p {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}

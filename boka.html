@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bokastyle.css" />
+    <title>Bonz.ai</title>
+  </head>
+  <body>
+    <header class="hero">
+      <!-- Nav Section -->
+      <div class="wrapper">
+        <nav class="hero__nav">
+          <span>
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <div class="hero__nav-heading-container">
+            <h2 class="hero__nav-heading">Bonz.ai</h2>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+          </div>
+          <ul class="hero__nav-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="boka.html">Boka här</a></li>
+          </ul>
+          <p class="hero__nav-text">EN/SE</p>
+        </nav>
+        <!-- End of Nav section -->
+        <div class="divider"></div>
+        <!-- Section banner -->
+        <section class="banner">
+          <p class="banner__top-text">OUR ACCOMMODATIONS</p>
+          <h1 class="banner__heading">Villas . Residences . Suites</h1>
+          <p class="banner__bottom-text">
+            Spend an exeptional holiday in paradise when you stay at Bonz.ai
+            sustainable hotel
+          </p>
+        </section>
+        <!-- End of section banner -->
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <form class="form">
+          <div class="form__checkin-container container">
+            <label for="checkin">Check In</label>
+            <input type="date" name="checkin" id="checkin" />
+          </div>
+          <div class="form__checkout-container container">
+            <label for="checkout">Check Out</label>
+            <input type="date" name="checkout" id="checkout" />
+          </div>
+          <div class="form__rooms-container container">
+            <label for="rooms">Rooms</label>
+            <select name="rooms" id="rooms">
+              <option value="1 room">1 Room</option>
+              <option value="2 room">2 Room</option>
+              <option value="3 room">3 Room</option>
+            </select>
+          </div>
+          <div class="form__guests-container container">
+            <label for="guests">Guests</label>
+            <select name="guests" id="guests">
+              <option value="1 Adult">1 Adult</option>
+              <option value="1 Adult, 1 child">1 Adult, 1 child</option>
+              <option value="" Adults">2 Adults</option>
+            </select>
+          </div>
+          <div class="form__btn-container container">
+            <button class="form__btn">Check Availability</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="space">
+          <address>
+            <span class="bold">ADDRESS</span> 70215 bonzgatan 121, Bonz
+          </address>
+        </div>
+        <div class="space">
+          <p>
+            <span class="bold">Phone</span>
+            <a href="tel:0752-51-24-66">123-456-7890</a>
+          </p>
+        </div>
+        <div class="space">
+          <span class="bold">Email</span>
+          <a href="mailto:reservation@bonz.ai@bonz.com">reservation@bonz.ai</a>
+        </div>
+        <div class="space">
+          <span class="bold">Social</span>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <p class="footer__rights">Copyright Bonz.ai Theme for Hotel Booking</p>
+        <div class="footer__terms">
+          <p>PRIVACY</p>
+          <p>TERMS OF USE</p>
+          <p>POLICY</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
