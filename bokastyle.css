@@ -66,7 +66,7 @@ body {
 
 .hero {
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("assets/image6.png") center/cover no-repeat fixed;
   position: relative;
   margin: 0 auto;
@@ -209,7 +209,6 @@ option {
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 100%;
   gap: 0.6rem;
   margin-top: 0;
   vertical-align: sub;
