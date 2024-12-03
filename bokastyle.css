@@ -19,7 +19,7 @@
 img {
   display: block;
   width: 100%;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 li {
@@ -46,6 +46,13 @@ section {
   height: 1px;
   background: #d0d0d039;
   margin-top: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1rem 0;
 }
 
 /* Boka styles */
@@ -162,6 +169,10 @@ select {
   color: #fff;
 }
 
+option {
+  background: #111111c3;
+}
+
 .form__btn-container {
   border: none;
   background: #b99d75;
@@ -177,10 +188,44 @@ select {
   font-size: 0.938rem;
 }
 
+/* Rooms styles */
+
+.firstroom__size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.firstroom__size-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.firstroom__size-shower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+  gap: 0.6rem;
+  margin-top: 0;
+  vertical-align: sub;
+  order: 2;
+}
+
+.firstroom__discover-link {
+  color: #000;
+  padding-top: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
 /* Footer Section */
 
 .footer {
-  /* margin-top: 2rem; */
   background: #111111c3;
   color: #fff;
   padding: 2rem 0;
