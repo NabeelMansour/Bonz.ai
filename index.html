@@ -31,26 +31,34 @@
     <header class="hero">
       <!-- Nav Section -->
       <div class="hero__wrapper">
-        <nav class="hero__nav">
-          <ul class="hero__nav-list">
-            <span>
-              <i class="fa-solid fa-bars"></i>
+        <div class="hero__outer">
+          <span id="nav-btn" class="nav-btn">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+
+          <div class="hero__nav-heading-container">
+            <h2 class="hero__nav-heading">Bonz.ai</h2>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            <i class="fa-solid fa-star" style="color: #ffd700"></i>
+          </div>
+          <p class="hero__nav-text">EN/SE</p>
+        </div>
+
+        <nav class="hero__nav" id="hero__nav">
+          <div class="hero__nav-nav-header">
+            <span class="nav-close" id="nav-close">
+              <i class="fas fa-times"></i>
             </span>
-            <div class="hero__nav-heading-container">
-              <h2 class="hero__nav-heading">Bonz.ai</h2>
-              <i class="fa-solid fa-star" style="color: #ffd700"></i>
-              <i class="fa-solid fa-star" style="color: #ffd700"></i>
-              <i class="fa-solid fa-star" style="color: #ffd700"></i>
-              <i class="fa-solid fa-star" style="color: #ffd700"></i>
-              <i class="fa-solid fa-star" style="color: #ffd700"></i>
-            </div>
+          </div>
+          <ul class="hero__nav-list">
             <li><a href="about.html">About</a></li>
-            <li><a href="boka.html">Boka här</a></li>
-            <p class="hero__nav-text">EN/SE</p>
+            <li><a href="boka.html">Boka</a></li>
           </ul>
         </nav>
         <!-- End of Nav section -->
-        <div class="divider"></div>
         <!-- Section banner -->
         <section class="banner">
           <h1 class="banner__heading">
@@ -61,6 +69,8 @@
         </section>
         <!-- End of section banner -->
       </div>
+      <div class="divider"></div>
     </header>
+    <script src="script.js"></script>
   </body>
 </html>

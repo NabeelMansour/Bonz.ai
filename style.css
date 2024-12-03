@@ -14,6 +14,7 @@
   --white: #fff;
   --line-hight: 1.5;
   --facility-cls: #646568;
+  --transition: all 0.3s linear;
 }
 
 img {
@@ -21,10 +22,10 @@ img {
   width: 100%;
   margin: 3rem 0;
 }
-
+/* 
 li {
   display: none;
-}
+} */
 
 .logo {
   margin: 0.5rem auto;
@@ -42,34 +43,103 @@ section {
   margin: 0 auto;
 }
 
-/***** Index styles *****/
+.divider {
+  height: 1px;
+  background: #d0d0d039;
+  margin-top: 1.2rem;
+}
 
+/***** Index styles *****/
+html,
 body {
   font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 .hero {
-  min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("assets/02-night.jpg") center/cover no-repeat fixed;
   position: relative;
+  color: #fff;
+  height: 100vh;
+}
+
+.hero__nav-heading-container {
   margin: 0 auto;
 }
 
-.hero__nav-list {
+.hero__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #53624e;
+  transform: translateX(-100%);
+  transition: var(--transition);
+}
+
+.hero__outer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem 0;
 }
 
-.hero__nav {
-  height: 10vh;
+.hero__outer h2 {
+  margin-bottom: 0;
 }
 
-.fa-bars {
+.showNav {
+  transform: translate(0);
+  z-index: 2;
+}
+
+.nav-btn {
+  cursor: pointer;
   color: var(--white);
   font-size: 40px;
+}
+
+.hero__nav-nav-header {
+  text-align: right;
+  padding: 1rem;
+}
+
+.nav-close {
+  display: block;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #f29c9c;
+  transition: var(--transition);
+  margin-right: 1rem;
+}
+
+.nav-close:hover {
+  color: #bb2525;
+}
+
+.hero__nav-list li {
+  list-style-type: none;
+}
+
+.hero__nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  transition: var(--transition);
+}
+
+.hero__nav a:hover {
+  background: #535353;
+  padding-left: 1.5rem;
 }
 
 .hero__nav-heading {
@@ -91,9 +161,12 @@ body {
 }
 
 .divider {
-  height: 1px;
+  height: 2px;
   background: #d0d0d039;
-  margin-top: 1.2rem;
+  margin-top: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 5rem;
 }
 
 .banner {
@@ -102,13 +175,18 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   color: var(--white);
   margin-top: -5rem;
 }
 
 .banner__heading {
+  margin: 1rem 0;
   font-size: 2rem;
   font-weight: 300;
+  text-align: center;
+  width: 60%;
+  line-height: var(--line-hight);
 }
 
 .banner__heading-small {
@@ -127,4 +205,10 @@ body {
   font-size: 1.1rem;
   display: inline-block;
   cursor: pointer;
+}
+
+.banner__btn:hover {
+  background: var(--white);
+  color: #805e2e;
+  transition: all 0.6s linear;
 }
