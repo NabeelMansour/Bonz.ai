@@ -28,55 +28,53 @@
     <title>Bonz.ai</title>
   </head>
   <body id="top">
-    <header class="hero">
-      <!-- Nav Section -->
+    <!-- header -->
+    <header class="header">
       <div class="wrapper">
-        <div class="hero__outer">
-          <span id="nav-btn" class="nav-btn">
-            <i class="fa-solid fa-bars"></i>
-          </span>
-
-          <div class="hero__nav-heading-container">
-            <h2 class="hero__nav-heading">Bonz.ai</h2>
-            <i class="fa-solid fa-star" style="color: #ffd700"></i>
-            <i class="fa-solid fa-star" style="color: #ffd700"></i>
-            <i class="fa-solid fa-star" style="color: #ffd700"></i>
-            <i class="fa-solid fa-star" style="color: #ffd700"></i>
-            <i class="fa-solid fa-star" style="color: #ffd700"></i>
-          </div>
-          <p class="hero__nav-text">EN/SE</p>
-        </div>
-
-        <nav class="hero__nav" id="hero__nav">
-          <div class="hero__nav-nav-header">
+        <div class="header__inner">
+            <div class="header__heading-container">
+              <h1 class="header__title">Bonz.ai</h1>
+              <i class="fa-solid fa-star" style="color: #ffd700"></i>
+              <i class="fa-solid fa-star" style="color: #ffd700"></i>
+              <i class="fa-solid fa-star" style="color: #ffd700"></i>
+              <i class="fa-solid fa-star" style="color: #ffd700"></i>
+              <i class="fa-solid fa-star" style="color: #ffd700"></i>
+            </div>
+          <!-- Navbar -->
+          <nav class="header__nav" id="header__nav">
             <span class="nav-close" id="nav-close">
               <i class="fas fa-times"></i>
             </span>
-          </div>
-          <ul class="hero__nav-list">
-            <li><a href="boka.html">Boka</a></li>
-            <li><a href="index.html">Home</a></li>
-          </ul>
-        </nav>
-        <!-- End of Nav section -->
 
-        <!-- Section banner -->
-        <section class="banner">
+            <ul>
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="boka.html">Boka</a></li>
+              <li class="header__nav-text" id="header__nav-text">
+                <a href="#">En/Sn</a>
+              </li>
+            </ul>
+          </nav>
+
+          <span class="nav-btn" id="nav-btn">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </header>
+<!-- End of header -->
+    <section class="banner">
           <p class="banner__top-text">OUR ACCOMMODATIONS</p>
-          <h1 class="banner__heading">Villas . Residences . Suites</h1>
+          <h1 class="banner__heading">Villas. Residences. Suites.</h1>
           <p class="banner__bottom-text">
             Spend an exeptional holiday in paradise when you stay at Bonz.ai
             sustainable hotel
           </p>
-        </section>
-        <!-- End of section banner -->
-      </div>
-      <div class="divider" id="divider"></div>
-    </header>
+    </section>
     <main>
       <!-- Sustainable Section -->
-      <div class="wrapper">
       <section class="sustainable">
+        <div class="wrapper">
           <article class="sustainable__resort">
             <img
               src="./assets/Resort.png"
@@ -89,7 +87,7 @@
               Where Sustainability
               <span class="sustainable-heading-light">Meets Smart Living</span>
             </h3>
-            <p class="sustainable__text">
+            <p class="sustainable__text medium">
               A Vision for the FutureAt Bonz.ai, we believe hospitality can be
               smarter and greener. Our hotel is designed to minimize its
               environmental footprint while maximizing comfort and
@@ -110,20 +108,22 @@
               alt="Solar panels on hotel roof"
               aria-label="Solar panels on hotel roof"
             />
-            <img
-              src="./assets/Office building.png"
-              alt="office logo"
-              aria-label="logo of office"
-              class="logo"
-            />
-            <p class="sustainable__solar-text">
-              Modern Building with Indoor Garden Singapore. Our own photovoltaic
-              system on the roof produces 15 % of our total electricity
-              consumption At our breakfast buffets we offer a selection of
-              seasonal products of organic quality
-            </p>
+            <div class="sustainable__solar-content">
+              <img
+                src="./assets/Office building.png"
+                alt="office logo"
+                aria-label="logo of office"
+                class="logo"
+              />
+              <p class="sustainable__solar-text medium">
+                Modern Building with Indoor Garden Singapore. Our own photovoltaic
+                system on the roof produces 15 % of our total electricity
+                consumption At our breakfast buffets we offer a selection of
+                seasonal products of organic quality
+              </p>
+            </div>
+          </div>
           </article>
-        </div>
       </section>
       <!-- End of sustainable Section -->
       <!-- Checkin section -->
@@ -140,7 +140,7 @@
               class="logo"
               aria-label="smartphone logo"
             />
-            <p class="checkin__text">
+            <p class="checkin__text medium">
               Modern travellers like you need things to be simple and
               convenient, right? That's why we do a so many things digitally.
               With your smartphone, you can check in, check out and unlock your
@@ -293,7 +293,7 @@
             />
             <div class="rooms__content">
               <h3 class="rooms__heading">Our rooms</h3>
-              <p class="rooms__text">
+              <p class="rooms__text medium">
                 At our hotel, you will stay in smart, modern rooms and
                 eco-friendly. Just make yourself comfortable! Our hotel rooms
                 combine timeless design with digital solutions, fast Wi-Fi and

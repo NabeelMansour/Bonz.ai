@@ -28,49 +28,48 @@
     <title>Bonz.ai</title>
   </head>
   <body>
-    <header class="hero">
-      <!-- Nav Section -->
-      <div class="hero__wrapper">
-        <div class="hero__outer">
-          <span id="nav-btn" class="nav-btn">
-            <i class="fa-solid fa-bars"></i>
-          </span>
-
-          <div class="hero__nav-heading-container">
-            <h2 class="hero__nav-heading">Bonz.ai</h2>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <div class="header__heading-container">
+            <h1 class="header__title">Bonz.ai</h1>
             <i class="fa-solid fa-star" style="color: #ffd700"></i>
             <i class="fa-solid fa-star" style="color: #ffd700"></i>
             <i class="fa-solid fa-star" style="color: #ffd700"></i>
             <i class="fa-solid fa-star" style="color: #ffd700"></i>
             <i class="fa-solid fa-star" style="color: #ffd700"></i>
           </div>
-          <p class="hero__nav-text">EN/SE</p>
-        </div>
-
-        <nav class="hero__nav" id="hero__nav">
-          <div class="hero__nav-nav-header">
+          <!-- Navbar -->
+          <nav class="header__nav" id="header__nav">
             <span class="nav-close" id="nav-close">
               <i class="fas fa-times"></i>
             </span>
-          </div>
-          <ul class="hero__nav-list">
-            <li><a href="about.html">About</a></li>
-            <li><a href="boka.html">Boka</a></li>
-          </ul>
-        </nav>
-        <!-- End of Nav section -->
-        <!-- Section banner -->
-        <section class="banner">
-          <h1 class="banner__heading">
-            Where Sustainability
-            <span class="banner__heading-small">Meets Smart Living</span>
-          </h1>
-          <a href="boka.html" class="banner__btn">Book Your Stay</a>
-        </section>
-        <!-- End of section banner -->
+
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="boka.html">Boka</a></li>
+              <li class="header__nav-text" id="header__nav-text">
+                <a href="#">En/Sn</a>
+              </li>
+            </ul>
+          </nav>
+
+          <span class="nav-btn" id="nav-btn">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
       </div>
       <div class="divider"></div>
     </header>
+
+    <section class="banner">
+      <h1 class="banner__heading">
+        Where Sustainability
+        <span class="banner__heading-small">Meets Smart Living</span>
+      </h1>
+      <a href="boka.html" class="banner__btn">Book Your Stay</a>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>

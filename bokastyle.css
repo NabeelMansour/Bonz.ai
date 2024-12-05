@@ -34,13 +34,19 @@ li {
 }
 
 section {
-  padding: 2rem 0;
+  /* padding: 2rem 0 0 0; */
   text-align: center;
 }
 
 .wrapper {
   width: 90%;
   margin: 0 auto;
+}
+
+.divider {
+  height: 1px;
+  background: #d0d0d039;
+  margin-top: 1.2rem;
 }
 
 h1,
@@ -99,7 +105,7 @@ body {
 
 .showNav {
   transform: translate(0);
-  z-index: 2;
+  z-index: 1;
 }
 
 .nav-btn {
@@ -313,6 +319,7 @@ option {
   color: #fff;
   padding: 2rem 0;
   order: 2;
+  margin-top: 2.5rem;
 }
 
 .bold {
