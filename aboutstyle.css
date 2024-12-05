@@ -58,16 +58,16 @@ p {
 html,
 body {
   font-family: "Lato", sans-serif;
-  /* min-height: 100vh; */
   scroll-behavior: smooth;
 }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("assets/09-day.jpg") center/cover no-repeat fixed;
   position: relative;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .header__nav {
@@ -83,7 +83,7 @@ body {
 }
 
 .showNav {
-  transform: translate(0);
+  transform: translate(-50%);
 }
 
 .nav-close {
@@ -111,7 +111,6 @@ body {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  display: block;
   font-size: 1.5rem;
   padding: 0.25rem 1rem;
   text-transform: uppercase;
@@ -120,9 +119,14 @@ body {
   transition: var(--transition);
 }
 
+ul {
+  list-style-type: none;
+  transform: translateX(60%);
+}
+
 .header__nav a:hover {
   background: #f7ebe8;
-  padding-left: 1.5rem;
+  display: inline-block;
   border-left: 0.25rem solid #bf0000;
 }
 
@@ -137,8 +141,8 @@ h1 {
   margin: 0;
 }
 
-.fa-bars {
-  font-size: 50px;
+.nav-btn {
+  z-index: 1;
 }
 
 .fa-star {
