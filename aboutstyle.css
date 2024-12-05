@@ -108,14 +108,14 @@ body {
 }
 
 .header__nav a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
   font-size: 1.5rem;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  color: #617d98;
   transition: var(--transition);
 }
 
@@ -125,7 +125,7 @@ ul {
 }
 
 .header__nav a:hover {
-  background: #f7ebe8;
+  background: #393b3d;
   display: inline-block;
   border-left: 0.25rem solid #bf0000;
 }
