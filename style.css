@@ -131,6 +131,10 @@ ul {
   padding-top: 1rem;
 }
 
+.nav-btn {
+  z-index: 1;
+}
+
 .fa-star {
   font-size: 10px;
 }
