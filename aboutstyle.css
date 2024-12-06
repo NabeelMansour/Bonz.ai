@@ -249,8 +249,16 @@ main {
   text-align: left;
 }
 
+/* check in */
+
+.checkin__inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .checkin__inner img {
   margin-top: 0;
+  order: -1;
 }
 
 /* Facility */
@@ -444,6 +452,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .checkin__inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .checkin__inner img {
+    margin-top: 0;
+    order: 1;
   }
 
   .facility__divider {

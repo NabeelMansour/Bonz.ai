@@ -252,12 +252,21 @@ option {
 
 /* Rooms styles */
 
+.firstroom__first {
+  display: flex;
+  flex-direction: column;
+}
+
 .firstroom__size {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: flex-start;
+}
+
+.firstroom__descreption-room {
+  order: -1;
 }
 
 .firstroom__size-logo {
@@ -459,8 +468,13 @@ a {
   .firstroom__first {
     margin-top: 5rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .firstroom__descreption-room {
+    order: 1;
   }
 
   .firstroom__size {
