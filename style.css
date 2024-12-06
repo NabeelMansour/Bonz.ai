@@ -120,7 +120,6 @@ ul {
 
 .header__nav a:hover {
   background: #393b3d;
-  display: inline-block;
   border-left: 0.25rem solid #bf0000;
 }
 
